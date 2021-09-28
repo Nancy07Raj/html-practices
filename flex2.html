@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Design 2 </title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+    body{
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .affiliation{
+        border-bottom: 1px dotted #323232;
+        padding-bottom: 10px;
+   }
+   .btn{
+       background-color: #22577A;
+       border-radius: 4px;
+       width: 120px;
+       height: 40px;
+       padding: 10px;
+       margin: 20px 0;
+       border: 0;
+       color: white;
+       font-size: 12px;
+   }
+   .child1-par2
+   {
+       display: flex;
+       flex-direction: column;
+       /* justify-content: center; */
+       align-items: center;
+       height: 300px;
+       max-width: 500px;
+       margin: 0 20px;
+   }
+   .child2-par2
+   {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       height: 200px;
+       width: 250px;
+       margin: 0 10px;
+       background-color: white;
+    }
+    .child1-par3
+    {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: 300px;
+        /* width: 500px; */
+        margin: 50px;
+        margin-left: 200px;
+        font-family: 'Roboto Slab', serif;
+   }
+   .child2-par3
+   {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       position: absolute;
+       bottom: 50px;
+       right: 200px;
+   }
+   .child1-par4
+   {
+       display: flex;
+       flex-direction: column;
+       justify-content: right;
+       align-content: center;
+       height: 300px;
+       width: 200px;
+       margin: 10px;
+       padding-right: 10px;
+       border-right: 1px solid #DCD6F7;
+   }
+   .child2-par4
+   {
+       border: none;
+
+   }
+   .contact{
+       display: flex;
+       flex-direction: column;
+       justify-content: left;
+   }
+    .container{
+        height: 300px;
+        width: 300px;
+        padding: 30px;
+        margin: 10px;
+    }
+    .container2
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 0px 50px;
+        padding: 0 50px;
+    }
+    .cnt-loc{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items:center;
+        margin: 0;
+   }
+   .h4-par
+   {
+       margin: 0;
+        color: #40514E;
+   }
+   .h-par3
+   {
+       margin: 5px 0;
+   }
+   .h-par4
+   {
+       margin: 0;
+       border-bottom: 1px solid #DCD6F7;
+       padding: 10px 5px ;
+        text-align: right;
+   }
+    .jmc-title{
+        display: flex;
+        /* position: relative; */
+        flex-direction: column;
+        justify-content: left;
+        padding-right: 10px;
+    }
+    .jmc-name{
+        position: absolute;
+        left:110px;
+        top: 50px;
+        line-height: 2px;
+    }
+    .jmc-prgm{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin: 10px 0;
+    }
+    .img{
+        height: 50px;
+        width: 50px;
+    }
+    .img1{
+        height: 20px;
+        width: 20px
+        padding-right: 10px;
+    }
+    .img2{
+        height: 30px;
+        width: 30px;
+        margin: 0 10px;
+    }
+    .img3
+    {
+        height: 150px;
+        width: 250px;
+        padding: 10px 0;
+    }
+    .img4
+    {
+        height: 80px;
+        width: 100px;
+        border-radius: 30px;
+        padding-bottom: 10px;
+    }
+    .img5
+    {
+        /* height: 100px; */
+        /* width: 100px; */
+        /* padding: 20px; */
+        margin: 100px 50px;
+    }
+    .parent1{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 10px;;
+    margin: 50px 30px;
+    background-color: #0F4C75;
+    color: #DCD6F7;
+    }
+    .parent2
+    {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        background-color: #DCD6F7;
+        margin: 20px 50px;
+    }
+    .parent3
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        /* align-items: center; */
+        background-color: #2b415b;
+        margin: 50px;
+        color: white;
+        font-family: 'Roboto Slab', serif;
+        position: relative;
+    }
+    .parent4
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 50px 30px;
+        height: 350px;
+        /* width: 1000px; */
+        background-color:#323232;
+        color: #DCD6F7;
+    }
+    .para{
+        margin: 40px auto;
+        line-height: 1.5;
+
+    }
+    .para2
+    {
+      line-height: 1.5;
+      font-size: 14px;
+      align-items: center;
+      width: 500px;   
+      color: #40514E;
+    }
+    .par2-sub1{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        /* padding-right: 10px; */
+        /* padding: 10px 0; */
+        margin: 0;
+        align-items: center;
+    }
+    .par3-sub1
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        /* align-items: ; */
+        margin: 20px 10px;
+        font-family: 'Lora', serif;
+
+    }
+    .par3-sub2
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 10px;
+    }
+    .social-media{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    .use-link{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+    }
+    .visitor{
+        background-color: yellow;
+        color:#323232;
+        margin-top: 50px;
+    }
+</style>
+</head>
+<body>
+<div class="parent1">
+    <div class="jmc-title container">
+        <div>
+            <img class="img" src="picture/jmc logo.jpg" alt="jmc-logo">
+        </div>
+        <div class="jmc-name">
+            <h3> Jamal Mohamed College</h3>
+            <h6>(AUTONOMOUS) TIRUCHIRAPALLI</h6>
+        </div>
+        <div>
+            <p class="para"> Jamal Mohamed College, was founded in 1951, an autonomous institution, affiliated to the Bharathidasan University, Tiruchirappalli.  The college is Re-accredited (3rd Cycle) with 'A' grade by NAAC. The college has been identified as the "College with Potential for Excellence" by the UGC.</p>
+        </div>
+    </div> 
+    <div class="use-link container">
+        <h3 style="margin-top: 2px;">Useful Link</h3>
+        <div >
+        <h4 class="affiliation"> BDU</h4>
+        <h4 class="affiliation">UGC</h4>
+        <h4 class="affiliation">AICTE</h4>
+        <h4 class="affiliation">NAAC</h4>
+        </div>
+    </div>
+    <div class="jmc-prgm container">
+        <h3 style="margin: 0;"> Programmes</h3>
+        <h4 class="visitor">VISITOR COUNTER: <strong>935682</strong></h4>
+
+    </div>
+    <div class="contact container">
+        <div>
+            <h3 style="margin:0;">Contact</h3>
+        </div>
+        <div class="cnt-loc">
+            <img class="img1" src="picture/call.png" alt="">
+            <p>0431-2331135,0431-2331235</p>
+        </div>
+        <div class="cnt-loc">
+            <img class="img1" src="picture/email.png" alt="">
+        <p>princi@jmc.edu</p>
+        </div>
+        <div class="cnt-loc">
+            <img class="img1"src="picture/web1.png" alt="" >
+        <p>www.jmc.edu</p>
+        </div>
+        <div class="cnt-loc">
+            <img class="img1" src="picture/pin.png" alt="">
+            <p > Jamal Mohamed College,
+                P.Box.No.808, #7 Race Course Road,
+                Khajanagar,Tiruchirapalli-620 020</p>
+        </div>
+        <div class="socia-media">
+        <img class="img2"src="picture/fb.png" alt="facebook">
+        <img class="img2"src="picture/twitter.png" alt="tiwtter">
+        <img class="img2" src="picture/youtube1.png" alt="youtube">
+        <img class="img2" src="picture/insta.png" alt="instagram">
+        </div>
+    </div>
+</div>
+<!-- Second flex -->
+<div class="parent2">
+    <h1 style="text-align: center;">Welcome to <span style="color:#FF5C58;"> Jamal Mohamed College </span></h1>
+    <div class="container2">
+    <div class="child1-par2">
+        <p class="para2">Jamal Mohamed College, was founded in 1951, an autonomous institution, affiliated to the Bharathidasan University, Tiruchirappalli. The college is administered by the Society of Jamal Mohamed College, is established in a sprawling land area of 87 acres, as a religious minority institution, with the primary objective of providing higher education to the downtrodden and socially backward sections of the society in general and Muslim minority in particular. The college is Re-accredited (3rd Cycle) with 'A' grade by NAAC. The college has been identified as the "College with Potential for Excellence" by the UGC.</p>
+        <button class="btn"> Read More</button>
+    </div>
+
+    <div class="child2-par2">
+        <img class="img3"src="picture/jmc galley.jpg" alt="">
+        <div class="par2-sub1">
+            <img class="img2" src="picture/image-icon.png" alt="">
+            <h4 class="h4-par2"> PHOTO GALLERIES</h4>
+        </div>
+    </div>
+<div class="child2-par2">
+        <img class="img3"src="picture/jmc galley2.jpg" alt="">
+        <div class="par2-sub1">
+            <img class="img2"  src="picture/video-icon.png" alt="">
+            <h4 class="h4-par2">VIDEO GALLERIES </h4>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Third Flex -->
+<div class="parent3">
+    <div class="child1-par3">
+        <h3 style="color: #FFE459;" class="h-par3">OUR MOTTO</h3>
+        <h1>"Show us the Right Path"</h1>
+    <div class="par3-sub1">
+        <div class="par3-sub2">
+            <img class="img"src="picture/star.png" alt="">
+            <h1 class="h-par3">80</h1>
+            <h5 class="h-par3">PROGRAMMED OFFERRED</h5>
+        </div>
+        <div class="par3-sub2">
+            <img class="img"src="picture/star.png" alt="">
+            <h1 class="h-par3">467</h1>
+            <h5 class="h-par3">TEACHING FACULTIES</h5>
+        </div>
+        <div class="par3-sub2">
+            <img class="img" src="picture/star.png" alt="">
+            <h1 class="h-par3">11,330</h1>
+            <h5 class="h-par3">STUDENT STRENGTH</h5>
+        </div>
+    </div>
+    </div>
+    <div class="child2-par3">
+        <img class="img4" src="picture/play-image.jpg" alt="">
+        <h1 class="h-par3"> <span style="color: #FFE459;"> CAMPUS</span> TOUR</h1>
+
+    </div>
+
+</div>
+<!-- Fourth Flex -->
+<div class="parent4">
+    <div class="child1-par4">
+        <h4 class="h-par4">Proctorial Board</h4>
+        <h4 class="h-par4"> Industrial Interface</h4>
+        <h4 class="h-par4">Academic Calendar</h4>
+        <h4 class="h-par4">Transport</h4>
+        <h4 class="h-par4">Hostel</h4>
+        <h4 class="h-par4">Mandatory Disclosure</h4>
+        <h4 class="h-par4">NAAC</h4>
+    </div>
+    <div class="child1-par4">
+        <h4 class="h-par4">Committee for SC ST</h4>
+        <h4 class="h-par4">Industry Institute Cell</h4>
+        <h4 class="h-par4">Ragging and Grievance Redressal</h4>
+        <h4 class="h-par4">Faculty Code of Contact</h4>
+        <h4 class="h-par4"> Operating Procedures</h4>
+        <h4 class="h-par4"> Central Library</h4>
+    </div>
+    <div class="child1-par4">
+        <img class="img5"src="picture/miet logo.png" alt="MIET">
+    </div>
+    <div class="child1-par4">
+        <h4 class="h-par4">Satarkta Comittee</h4>
+        <h4 class="h-par4">Women Cell</h4>
+        <h4 class="h-par4">Anti-Ragging Squard</h4>
+        <h4 class="h-par4">Anti Ragging Committee</h4>
+        <h4 class="h-par4"> Declaration Under Section 4(1)(b) of RTI 2005</h4>
+    </div>
+    <Div class="child1-par4 child2-par4">
+        <h3 style="color:#E84545">Meerut Institute of Engineering and Technology</h3>
+        <span>NH-58, Baghpat Road,</span>
+        <span>Bypass Crossing, Meerut (250005)</span>
+        <span>UP (India)</span>
+        <span> Phone : 91121 2439019, 2439057 </span>
+        <span> Fax : 0121-2439058</span>
+        <span> Email :contact@miet.ac.in</span>
+    </Div>
+</div>
+</body>
+</html>

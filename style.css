@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    
+    
+} 
+.h1-1{ 
+    
+    color: #d3d023;
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    display: inline-block;
+}
+.h3-1{    
+    
+    color:rgb(139, 61, 91);
+    
+    top: 70px;
+    left:150px;
+    display: inline-block;
+     position: absolute; 
+} 
+a{
+    text-decoration: unset;
+    color: #B61919;
+    font-weight:bold;
+}
+.div1{
+    font-family: 'Kalam', cursive;
+    background-color: aquamarine;
+    margin: 0%;
+    padding:10px;
+    border: transparent 10px;
+}
+.img1{
+    display: inline-block;
+    
+    
+}
+.dept{
+
+    display:inline-block;
+    position:absolute;
+    right: 200px;
+
+}
+.home {
+    display: inline-block;
+    position: absolute;
+    right: 500px;
+}
+.facility{
+    
+    display:inline-block;
+    position: absolute;
+    right: 360px;
+}
+.contact{
+    position: absolute;
+    right: 50px;
+}

@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+     
+} 
+
+.dcs{
+    display: inline-block;
+    margin: 10px 40px;
+}
+.dcomm{
+    display: inline-block;
+    margin: 10px 40px;
+
+}
+    
+.dphy{
+        display: inline-block;
+        margin: 10px 40px;
+     }
+.dBA{
+    display: inline-block;
+    margin: 10px 40px;
+}
+.dept-title-h1{
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.img-right
+{
+    size: 100px;
+    float:right;
+    margin-left: 30px;
+}
+.img-left
+{
+    size: 100px;
+    float:left;
+    margin-right:30px;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    color: #2A0944;
+    font-weight: bold;
+    width: 100% ;
+    line-height: 2;
+    text-align:justify;
+}

@@ -1,0 +1,27 @@
+body{
+    margin: 0 auto 20px;
+}
+.cntcointainer{
+    margin: auto;
+    padding: 20px;
+
+}
+.cntdivleft{    
+    background-image:url("picture/cnt1.jpg");
+    display: inline-block;
+    padding: 100px;
+    padding-left: 20px;
+}
+.cntdivright{
+    background-color: #728077;
+    width: 600px;
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    right: 50px;
+    padding: 100px;
+   
+}
+.loc-img{
+    display: inline-block;
+}
